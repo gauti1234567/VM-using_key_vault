@@ -67,24 +67,33 @@ vms = {
     location            = "centralindia"
     size                = "Standard_D4_v5"
     nic_name            = "nic-24"
-    key_rgname          = "keyvault_rg"
-    keyvault-name       = "keyvault8298"
-    secret-name         = "vmusername"
-    secret-password     = "vmpassword"
+    keyvault-name       = "keyvault2310026"
+    secret-name         = "vm-username"
+    secret-password     = "vm-password"
   }
 }
 
 bastions = {
   bastion1 = {
 
-    name                 = "azurebastion"
-    location             = "centralindia"
-    resource_group_name  = "rg-24"
+    name                  = "azurebastion"
+    location              = "centralindia"
+    resource_group_name   = "rg-24"
     ip_configuration_name = "configuration"
-    subnet               = "AzureBastionSubnet"
-    virtual_network_name = "vnet-24"
-    public_ip            = "publicip-24"
+    subnet                = "AzureBastionSubnet"
+    virtual_network_name  = "vnet-24"
+    public_ip             = "publicip-24"
   }
 }
+key_vault = {
 
+  keyvault1 = {
+
+    name                = "keyvault2310026"
+    location            = "centralindia"
+    resource_group_name = "rg-24"
+    username            = "vm-username"
+    password            = "vm-password"
+  }
+}
 

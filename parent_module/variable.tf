@@ -6,3 +6,7 @@ variable "nsg" {}
 variable "nics" {}
 variable "vms" {}
 variable "bastions" {}
+variable "key_vault" {}
+variable "vm-username" {}
+variable "vm-password" {}
+

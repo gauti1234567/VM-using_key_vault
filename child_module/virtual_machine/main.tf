@@ -35,7 +35,7 @@ data "azurerm_network_interface" "nic_data" {
 data "azurerm_key_vault" "kv" {
   for_each            = var.vms
   name                = each.value.keyvault-name
-  resource_group_name = each.value.key_rgname
+  resource_group_name = each.value.resource_group_name
 }
 
 #VM_username
